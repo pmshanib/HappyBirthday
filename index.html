@@ -16,33 +16,40 @@
       And your heart be filled with endless joy.
     </p>
     <div class="heart">💖</div>
+    <form action="comewithme.html">
+    <button class="come-btn">Come With Me 💫</button>
+    </form>
   </div>
 
   <!-- Confetti Script -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <script>
-    // Burst confetti every second for 5 seconds
-    let duration = 5 * 1000;
-    let end = Date.now() + duration;
+    function startConfetti() {
+      let duration = 2 * 500;
+      let end = Date.now() + duration;
 
-    (function frame() {
-      confetti({
-        particleCount: 5,
-        angle: 60,
-        spread: 55,
-        origin: { x: 0 }
-      });
-      confetti({
-        particleCount: 5,
-        angle: 120,
-        spread: 55,
-        origin: { x: 1 }
-      });
+      (function frame() {
+        confetti({
+          particleCount: 5,
+          angle: 60,
+          spread: 55,
+          origin: { x: 0 }
+        });
+        confetti({
+          particleCount: 5,
+          angle: 120,
+          spread: 55,
+          origin: { x: 1 }
+        });
 
-      if (Date.now() < end) {
-        requestAnimationFrame(frame);
-      }
-    })();
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      })();
+    }
+
+    // Start on page load
+    startConfetti();
   </script>
 </body>
 </html>

@@ -3,87 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>For My Crush 💖</title>
-  <style>
-    body {
-      margin: 0;
-      background: linear-gradient(to right, #ff9a9e, #fad0c4);
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      height: 100vh;
-    }
-
-    .wrapper {
-      position: relative;
-      width: 100%;
-      max-width: 1200px;
-      margin-top: 80px;
-    }
-
-    /* Straight rope line */
-    .rope-line {
-      width: 100%;
-      height: 6px;
-      background-color: #8B4513;
-      position: relative;
-    }
-
-    .hanger-container {
-      position: absolute;
-      top: 6px; /* Just below the rope */
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      z-index: 1;
-    }
-
-    .hanger {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transform-origin: top center;
-      animation: swing 3s ease-in-out infinite alternate;
-    }
-
-    .hanger::before {
-      content: '';
-      width: 2px;
-      background-color: #444;
-      display: block;
-    }
-
-    /* Images styling */
-    .hanger img {
-      width: 80px;
-      height: 80px;
-      border-radius: 10px;
-      border: 3px solid #fff;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
-    /* Staggered thread heights */
-    .hanger:nth-child(1)::before { height: 100px; }
-    .hanger:nth-child(2)::before { height: 200px; }
-    .hanger:nth-child(3)::before { height: 300px; }
-    .hanger:nth-child(4)::before { height: 400px; }
-
-    /* Animation stagger */
-    .hanger:nth-child(even) {
-      animation-delay: 0.5s;
-    }
-
-    @keyframes swing {
-      0% {
-        transform: rotate(-2deg);
-      }
-      100% {
-        transform: rotate(2deg);
-      }
-    }
-  </style>
+  <title>Surprise 🎂</title>
+  <link rel="stylesheet" type="text/css" href="comewithme.css">
 </head>
 <body>
+
+  <div class="balloon red"><div class="string"></div></div>
+  <div class="balloon blue"><div class="string"></div></div>
+  <div class="balloon green"><div class="string"></div></div>
+  <div class="balloon yellow"><div class="string"></div></div>
+
+
   <div class="wrapper">
     <div class="rope-line"></div>
 
